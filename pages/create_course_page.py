@@ -28,6 +28,7 @@ class CreateCoursePage(BasePage):
         self.preview_image_remove_button = page.get_by_test_id(
             'create-course-preview-image-upload-widget-remove-button'
         )
+        self.preview_image_upload_input = page.get_by_test_id('create-course-preview-image-upload-widget-input')
 
         self.create_course_title_input = page.get_by_test_id('create-course-form-title-input').locator('input')
         self.create_course_estimated_time_input = (
