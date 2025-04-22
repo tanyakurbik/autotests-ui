@@ -79,4 +79,4 @@ class CoursesListPage(BasePage):
         self.course_menu_button.nth(index).click()
 
         expect(self.course_delete_menu_item.nth(index)).to_be_visible()
-        self.course_delete_menu_item.nth(index).click(is_image_uploaded=True)
+        self.course_delete_menu_item.nth(index).click()
