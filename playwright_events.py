@@ -1,5 +1,8 @@
 from playwright.sync_api import sync_playwright, Request, Response
 
+from config import settings
+
+
 def log_request(request: Request):
     print(f"Request: {request.url}")
 
@@ -8,7 +11,7 @@ def log_response(response: Response):
 
 
 with sync_playwright() as playwright:
-    browser = playwright.chromium.launch(headless=False)
+    browser = playwright.chromium.launch(headless=settings.headless)
     page = browser.new_page()
 
     # Добавляем обработчики событий
