@@ -1,3 +1,0 @@
-webkit-firefox/index.html filter=lfs diff=lfs merge=lfs -text
-chromium-webkit/index.html filter=lfs diff=lfs merge=lfs -text
-chromium-webkit-firefox/index.html filter=lfs diff=lfs merge=lfs -text
